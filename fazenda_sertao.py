@@ -320,7 +320,17 @@ while rodando:
                                   "R$", estoque[i][2], "/kg |",
                                   "Total: R$", round(valor_total, 2))
                             i = i + 1
-
+                elif op_prod == "5":
+                    print("--------------------------------------------")
+                    confirmacao = input("  Confirma zerar todo o estoque? (s/n): ")
+                    if confirmacao == "s":
+                        i = 0
+                        while i < len(estoque):
+                            estoque[i][1] = 0.0
+                            i = i + 1
+                        print("  Estoque zerado!")
+                    else:
+                        print("  Cancelado.")
                 elif op_prod == "0":
                     continuar_prod = False
                 else:
