@@ -253,6 +253,7 @@ while rodando:
                 print("  2 - Ver historico de ordenhas")
                 print("  3 - Adicionar produto ao estoque")
                 print("  4 - Ver estoque atual")
+                print("  5 - Zerar estoque")
                 print("  0 - Voltar")
                 op_prod = input("  Opcao: ")
 
